@@ -6,7 +6,7 @@ class Cat {
         this.sex = sex;
     };
     speak() {
-        console.log(this.name + " says meow!");
+       return this.name + " says meow!";
     };
   }
   class Dog {
@@ -14,15 +14,14 @@ class Cat {
     constructor(name, sex) {
         this.name = name;
         this.sex = sex;
-        this.speak =function(){
-            console.log(this.name + " says woof!");
-        };
+    };
+    speak() {
+     
+        return this.name + " says woof!";
     };
   }
 //     };
-//     speak() {
-//         console.log(this.name + " says woof!");
-//     };
+   
 //   }
   
   class Bird {
@@ -32,6 +31,6 @@ class Cat {
         this.sex = sex;
     };
     speak() {
-        console.log("It's me! , the parrot!");
+        return this.sex === 'male' ? `It's me! ${this.name}, the parrot!` : `${this.name} says squawk!`;
     };
   }
